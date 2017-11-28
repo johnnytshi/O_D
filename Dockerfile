@@ -76,7 +76,7 @@ RUN git clone https://github.com/tensorflow/models.git
 WORKDIR /models/research/
 RUN protoc object_detection/protos/*.proto --python_out=.
 ENV PYTHONPATH=${PYTHONPATH}:/models/research/:/models/research/slim
-#RUN python3 object_detection/builders/model_builder_test.py
+RUN python3 object_detection/builders/model_builder_test.py
 
 WORKDIR /model_zoo
 RUN wget http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_11_06_2017.tar.gz
