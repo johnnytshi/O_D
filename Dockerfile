@@ -79,26 +79,18 @@ ENV PYTHONPATH=${PYTHONPATH}:/models/research/:/models/research/slim
 RUN python3 object_detection/builders/model_builder_test.py
 
 WORKDIR /model_zoo
-RUN wget http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_11_06_2017.tar.gz
-RUN tar -xvzf ssd_inception_v2_coco_11_06_2017.tar.gz
-RUN rm -rf ssd_inception_v2_coco_11_06_2017.tar.gz
+RUN wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2017_11_17.tar.gz
+RUN tar -xvzf ssd_mobilenet_v1_coco_2017_11_17.tar.gz
+RUN rm -rf ssd_mobilenet_v1_coco_2017_11_17.tar.gz
 
-RUN wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz
-RUN tar -xvzf ssd_mobilenet_v1_coco_11_06_2017.tar.gz
-RUN rm -rf ssd_mobilenet_v1_coco_11_06_2017.tar.gz
+RUN wget http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_2017_11_17.tar.gz
+RUN tar -xvzf ssd_inception_v2_coco_2017_11_17.tar.gz
+RUN rm -rf ssd_inception_v2_coco_2017_11_17.tar.gz
 
-RUN wget http://download.tensorflow.org/models/object_detection/rfcn_resnet101_coco_11_06_2017.tar.gz
-RUN tar -xvzf rfcn_resnet101_coco_11_06_2017.tar.gz
-RUN rm -rf rfcn_resnet101_coco_11_06_2017.tar.gz
+RUN wget http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2017_11_08.tar.gz
+RUN tar -xvzf faster_rcnn_inception_v2_coco_2017_11_08.tar.gz
+RUN rm -rf faster_rcnn_inception_v2_coco_2017_11_08.tar.gz
 
-RUN wget http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_11_06_2017.tar.gz
-RUN tar -xvzf faster_rcnn_resnet101_coco_11_06_2017.tar.gz
-RUN rm -rf faster_rcnn_resnet101_coco_11_06_2017.tar.gz
-
-RUN wget http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_coco_11_06_2017.tar.gz
-RUN tar -xvzf faster_rcnn_inception_resnet_v2_atrous_coco_11_06_2017.tar.gz
-RUN rm -rf faster_rcnn_inception_resnet_v2_atrous_coco_11_06_2017.tar.gz
-
-RUN wget http://download.tensorflow.org/models/object_detection/faster_rcnn_nas_coco_24_10_2017.tar.gz
-RUN tar -xvzf faster_rcnn_nas_coco_24_10_2017.tar.gz
-RUN rm -rf faster_rcnn_nas_coco_24_10_2017.tar.gz
+RUN wget http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet50_lowproposals_coco_2017_11_08.tar.gz
+RUN tar -xvzf faster_rcnn_resnet50_lowproposals_coco_2017_11_08.tar.gz
+RUN rm -rf faster_rcnn_resnet50_lowproposals_coco_2017_11_08.tar.gz
