@@ -32,8 +32,7 @@ RUN apt-get install -y \
 	protobuf-compiler \
 	python-pil \
 	python-lxml \
-	python3-tk \
-	imutils
+	python3-tk
 
 # Python dependencies
 RUN pip3 --no-cache-dir install \
@@ -44,6 +43,7 @@ RUN pip3 --no-cache-dir install \
     py3nvml \
     jupyter \
     matplotlib \
+    imutils \
     slackclient
 
 WORKDIR /
