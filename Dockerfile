@@ -32,7 +32,8 @@ RUN apt-get install -y \
 	protobuf-compiler \
 	python-pil \
 	python-lxml \
-	python3-tk
+	python3-tk \
+	imutils
 
 # Python dependencies
 RUN pip3 --no-cache-dir install \
